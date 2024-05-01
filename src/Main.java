@@ -4,30 +4,28 @@ public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Ââåäèòå äâà öåëûõ ÷èñëà:");
+        System.out.println("Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ 2 Ñ‡Ð¸ÑÐ»Ð°: a Ð¸ b");
         int a = scanner.nextInt();
         int b = scanner.nextInt();
 
-        // Ñðàâíåíèå ÷èñåë
         if (a > b) {
-            System.out.println("a > b");
+            System.out.println("a > b: ");
         } else if (a < b) {
-            System.out.println("a < b");
+            System.out.println("a < b: ");
         } else {
-            System.out.println("a = b");
+            System.out.println("a = b: ");
         }
 
-        // Îïåðàöèè íàä ÷èñëàìè
-        System.out.println("Ñëîæåíèå: " + (a + b));
-        System.out.println("Âû÷èòàíèå: " + (a - b));
+        System.out.println("Ð ÐµÐ·ÑƒÐ»ÑŒÑ‚Ð°Ñ‚ ÑÐ»Ð¾Ð¶ÐµÐ½Ð¸Ñ: " + (a + b));
+        System.out.println("Ð ÐµÐ·ÑƒÐ»ÑŒÑ‚Ð°Ñ‚ Ð²Ñ‹Ñ‡Ð¸Ñ‚Ð°Ð½Ð¸Ñ: " + (a - b));
 
         if (b != 0) {
-            System.out.println("Äåëåíèå: " + (a / b));
+            System.out.println("Ð ÐµÐ·ÑƒÐ»ÑŒÑ‚Ð°Ñ‚ Ð´ÐµÐ»ÐµÐ½Ð¸Ñ: " + (a / b));
         } else {
-            System.out.println("Äåëåíèå íà íîëü íåâîçìîæíî");
+            System.out.println("ÐÐ° 0 Ð´ÐµÐ»Ð¸Ñ‚ÑŒ Ð½ÐµÐ»ÑŒÐ·Ñ");
         }
 
-        System.out.println("Óìíîæåíèå: " + (a * b));
+        System.out.println("Ð ÐµÐ·ÑƒÐ»ÑŒÑ‚Ð°Ñ‚ ÑƒÐ¼Ð½Ð¾Ð¶ÐµÐ½Ð¸Ñ: " + (a * b));
 
         scanner.close();
     }
